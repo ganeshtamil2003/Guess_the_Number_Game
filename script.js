@@ -1,5 +1,5 @@
 let randomNumber = Math.floor(Math.random() * 101); // Random number between 0 and 100
-let attemptsLeft = 5;
+let attemptsLeft = 7;
 
 function checkGuess() {
     const userGuess = parseInt(document.getElementById("userGuess").value);
