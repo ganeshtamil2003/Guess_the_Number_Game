@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        input[type="number"] {
+            padding: 10px;
+            font-size: 18px;
+            width: 200px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess the Number</h1>
+    <p>Enter a number between <strong>0</strong> and <strong>100</strong>.</p>
+    <input type="number" id="userGuess" placeholder="Your guess here" min="0" max="100">
+    <button onclick="checkGuess()">Submit</button>
+    <div class="message" id="message"></div>
+    <p>Attempts left: <span id="attemptsLeft">5</span></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
