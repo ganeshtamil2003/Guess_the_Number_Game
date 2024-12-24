@@ -40,7 +40,7 @@ function checkGuess() {
 
 function resetGame() {
     randomNumber = Math.floor(Math.random() * 101);
-    attemptsLeft = 5;
+    attemptsLeft = 7;
     document.getElementById("attemptsLeft").textContent = attemptsLeft;
     setTimeout(() => {
         document.getElementById("message").textContent = "Game reset! Start guessing again.";
